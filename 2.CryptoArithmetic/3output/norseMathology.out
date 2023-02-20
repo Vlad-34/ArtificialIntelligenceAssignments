@@ -1,0 +1,282 @@
+============================== Mace4 =================================
+Mace4 (64) version 2017-11A (CIIRC), November 2017.
+Process 30137 was started by vlad on ubuntu,
+Wed Dec 14 20:13:31 2022
+The command was "mace4 -f norseMathology.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file norseMathology.in
+
+set(arithmetic).
+    % set(arithmetic) -> clear(lnh).
+    % set(arithmetic) -> assign(selection_order, 0).
+
+    % Declaring Mace4 arithmetic parse types.
+assign(domain_size,10).
+    % assign(domain_size, 10) -> assign(start_size, 10).
+    % assign(domain_size, 10) -> assign(end_size, 10).
+assign(max_models,-1).
+
+list(distinct).
+[L,O,K,I,D,U,N,T,H,R].
+end_of_list.
+
+formulas(assumptions).
+L != 0.
+I != 0.
+O != 0.
+T != 0.
+L * 1000 + O * 100 + K * 10 + I + I * 1000 + D * 100 + U * 10 + N + O * 1000 + D * 100 + I * 10 + N = T * 1000 + H * 100 + O * 10 + R.
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+
+============================== end of process non-clausal formulas ===
+
+============================== CLAUSES FOR SEARCH ====================
+
+formulas(mace4_clauses).
+L != 0.
+I != 0.
+O != 0.
+T != 0.
+L * 1000 + O * 100 + K * 10 + I + I * 1000 + D * 100 + U * 10 + N + O * 1000 + D * 100 + I * 10 + N = T * 1000 + H * 100 + O * 10 + R.
+L != O.
+L != K.
+L != I.
+L != D.
+L != U.
+L != N.
+L != T.
+L != H.
+L != R.
+O != K.
+O != I.
+O != D.
+O != U.
+O != N.
+O != T.
+O != H.
+O != R.
+K != I.
+K != D.
+K != U.
+K != N.
+K != T.
+K != H.
+K != R.
+I != D.
+I != U.
+I != N.
+I != T.
+I != H.
+I != R.
+D != U.
+D != N.
+D != T.
+D != H.
+D != R.
+U != N.
+U != T.
+U != H.
+U != R.
+N != T.
+N != H.
+N != R.
+T != H.
+T != R.
+H != R.
+end_of_list.
+
+============================== end of clauses for search =============
+
+% The largest natural number in the input is 1000.
+
+============================== DOMAIN SIZE 10 ========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=1, seconds=1], [
+
+        function(D, [ 0 ]),
+
+        function(H, [ 6 ]),
+
+        function(I, [ 3 ]),
+
+        function(K, [ 4 ]),
+
+        function(L, [ 1 ]),
+
+        function(N, [ 2 ]),
+
+        function(O, [ 5 ]),
+
+        function(R, [ 7 ]),
+
+        function(T, [ 9 ]),
+
+        function(U, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=2, seconds=1], [
+
+        function(D, [ 0 ]),
+
+        function(H, [ 6 ]),
+
+        function(I, [ 3 ]),
+
+        function(K, [ 8 ]),
+
+        function(L, [ 1 ]),
+
+        function(N, [ 2 ]),
+
+        function(O, [ 5 ]),
+
+        function(R, [ 7 ]),
+
+        function(T, [ 9 ]),
+
+        function(U, [ 4 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=3, seconds=2], [
+
+        function(D, [ 6 ]),
+
+        function(H, [ 5 ]),
+
+        function(I, [ 4 ]),
+
+        function(K, [ 7 ]),
+
+        function(L, [ 2 ]),
+
+        function(N, [ 3 ]),
+
+        function(O, [ 1 ]),
+
+        function(R, [ 0 ]),
+
+        function(T, [ 8 ]),
+
+        function(U, [ 9 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=4, seconds=2], [
+
+        function(D, [ 6 ]),
+
+        function(H, [ 5 ]),
+
+        function(I, [ 4 ]),
+
+        function(K, [ 9 ]),
+
+        function(L, [ 2 ]),
+
+        function(N, [ 3 ]),
+
+        function(O, [ 1 ]),
+
+        function(R, [ 0 ]),
+
+        function(T, [ 8 ]),
+
+        function(U, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=5, seconds=3], [
+
+        function(D, [ 5 ]),
+
+        function(H, [ 2 ]),
+
+        function(I, [ 4 ]),
+
+        function(K, [ 0 ]),
+
+        function(L, [ 3 ]),
+
+        function(N, [ 7 ]),
+
+        function(O, [ 1 ]),
+
+        function(R, [ 8 ]),
+
+        function(T, [ 9 ]),
+
+        function(U, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=6, seconds=3], [
+
+        function(D, [ 5 ]),
+
+        function(H, [ 2 ]),
+
+        function(I, [ 4 ]),
+
+        function(K, [ 6 ]),
+
+        function(L, [ 3 ]),
+
+        function(N, [ 7 ]),
+
+        function(O, [ 1 ]),
+
+        function(R, [ 8 ]),
+
+        function(T, [ 9 ]),
+
+        function(U, [ 0 ])
+]).
+
+============================== end of model ==========================
+
+============================== STATISTICS ============================
+
+For domain size 10.
+
+Current CPU time: 0.00 seconds (total CPU time: 8.43 seconds).
+Ground clauses: seen=50, kept=50.
+Selections=1563994, assignments=15639940, propagations=2177280, current_models=6.
+Rewrite_terms=123263932, rewrite_bools=101093437, indexes=0.
+Rules_from_neg_clauses=2177280, cross_offs=5922649.
+
+============================== end of statistics =====================
+
+User_CPU=8.43, System_CPU=0.20, Wall_clock=9.
+
+Exiting with 6 models.
+
+Process 30137 exit (all_models) Wed Dec 14 20:13:40 2022
+The process finished Wed Dec 14 20:13:40 2022

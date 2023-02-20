@@ -1,0 +1,147 @@
+============================== Mace4 =================================
+Mace4 (64) version 2017-11A (CIIRC), November 2017.
+Process 29724 was started by vlad on ubuntu,
+Wed Dec 14 20:04:20 2022
+The command was "mace4 -f celticMathology.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file celticMathology.in
+
+set(arithmetic).
+    % set(arithmetic) -> clear(lnh).
+    % set(arithmetic) -> assign(selection_order, 0).
+
+    % Declaring Mace4 arithmetic parse types.
+assign(domain_size,10).
+    % assign(domain_size, 10) -> assign(start_size, 10).
+    % assign(domain_size, 10) -> assign(end_size, 10).
+assign(max_models,-1).
+
+list(distinct).
+[A,R,W,N,D,G,U,B,I,T].
+end_of_list.
+
+formulas(assumptions).
+A != 0.
+D != 0.
+N != 0.
+B != 0.
+A * 10000 + R * 1000 + A * 100 + W * 10 + N + D * 10000 + A * 1000 + G * 100 + D * 10 + A + N * 10000 + U * 1000 + A * 100 + D * 10 + A = B * 100000 + R * 10000 + I * 1000 + G * 100 + I * 10 + T.
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+
+============================== end of process non-clausal formulas ===
+
+============================== CLAUSES FOR SEARCH ====================
+
+formulas(mace4_clauses).
+A != 0.
+D != 0.
+N != 0.
+B != 0.
+A * 10000 + R * 1000 + A * 100 + W * 10 + N + D * 10000 + A * 1000 + G * 100 + D * 10 + A + N * 10000 + U * 1000 + A * 100 + D * 10 + A = B * 100000 + R * 10000 + I * 1000 + G * 100 + I * 10 + T.
+A != R.
+A != W.
+A != N.
+A != D.
+A != G.
+A != U.
+A != B.
+A != I.
+A != T.
+R != W.
+R != N.
+R != D.
+R != G.
+R != U.
+R != B.
+R != I.
+R != T.
+W != N.
+W != D.
+W != G.
+W != U.
+W != B.
+W != I.
+W != T.
+N != D.
+N != G.
+N != U.
+N != B.
+N != I.
+N != T.
+D != G.
+D != U.
+D != B.
+D != I.
+D != T.
+G != U.
+G != B.
+G != I.
+G != T.
+U != B.
+U != I.
+U != T.
+B != I.
+B != T.
+I != T.
+end_of_list.
+
+============================== end of clauses for search =============
+
+% The largest natural number in the input is 100000.
+
+============================== DOMAIN SIZE 10 ========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=1, seconds=8], [
+
+        function(A, [ 9 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 8 ]),
+
+        function(G, [ 0 ]),
+
+        function(I, [ 1 ]),
+
+        function(N, [ 7 ]),
+
+        function(R, [ 6 ]),
+
+        function(T, [ 5 ]),
+
+        function(U, [ 4 ]),
+
+        function(W, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== STATISTICS ============================
+
+For domain size 10.
+
+Current CPU time: 0.00 seconds (total CPU time: 8.81 seconds).
+Ground clauses: seen=50, kept=50.
+Selections=1563994, assignments=15639940, propagations=2177280, current_models=1.
+Rewrite_terms=117195532, rewrite_bools=101093437, indexes=0.
+Rules_from_neg_clauses=2177280, cross_offs=5922649.
+
+============================== end of statistics =====================
+
+User_CPU=8.81, System_CPU=0.25, Wall_clock=9.
+
+Exiting with 1 model.
+
+Process 29724 exit (all_models) Wed Dec 14 20:04:29 2022
+The process finished Wed Dec 14 20:04:29 2022

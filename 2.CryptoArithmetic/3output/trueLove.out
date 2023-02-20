@@ -1,0 +1,2470 @@
+============================== Mace4 =================================
+Mace4 (64) version 2017-11A (CIIRC), November 2017.
+Process 30795 was started by vlad on ubuntu,
+Wed Dec 14 20:21:50 2022
+The command was "mace4 -f trueLove.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file trueLove.in
+
+set(arithmetic).
+    % set(arithmetic) -> clear(lnh).
+    % set(arithmetic) -> assign(selection_order, 0).
+
+    % Declaring Mace4 arithmetic parse types.
+assign(domain_size,10).
+    % assign(domain_size, 10) -> assign(start_size, 10).
+    % assign(domain_size, 10) -> assign(end_size, 10).
+assign(max_models,-1).
+
+list(distinct).
+[V,L,A,D,B,I,O,E].
+end_of_list.
+
+formulas(assumptions).
+V != 0.
+B != 0.
+L != 0.
+V * 1000 + L * 100 + A * 10 + D + B * 100 + I * 10 + A = L * 1000 + O * 100 + V * 10 + E.
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+
+============================== end of process non-clausal formulas ===
+
+============================== CLAUSES FOR SEARCH ====================
+
+formulas(mace4_clauses).
+V != 0.
+B != 0.
+L != 0.
+V * 1000 + L * 100 + A * 10 + D + B * 100 + I * 10 + A = L * 1000 + O * 100 + V * 10 + E.
+V != L.
+V != A.
+V != D.
+V != B.
+V != I.
+V != O.
+V != E.
+L != A.
+L != D.
+L != B.
+L != I.
+L != O.
+L != E.
+A != D.
+A != B.
+A != I.
+A != O.
+A != E.
+D != B.
+D != I.
+D != O.
+D != E.
+B != I.
+B != O.
+B != E.
+I != O.
+I != E.
+O != E.
+end_of_list.
+
+============================== end of clauses for search =============
+
+% The largest natural number in the input is 1000.
+
+============================== DOMAIN SIZE 10 ========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=1, seconds=0], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 1 ]),
+
+        function(D, [ 3 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=2, seconds=0], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 1 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=3, seconds=0], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 1 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=4, seconds=0], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 1 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=5, seconds=0], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 3 ]),
+
+        function(E, [ 4 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=6, seconds=0], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=7, seconds=0], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=8, seconds=0], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=9, seconds=0], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=10, seconds=0], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 4 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=11, seconds=0], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 3 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=12, seconds=0], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=13, seconds=0], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=14, seconds=0], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=15, seconds=0], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 2 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=16, seconds=1], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=17, seconds=1], [
+
+        function(A, [ 8 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=18, seconds=1], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=19, seconds=1], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=20, seconds=1], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=21, seconds=1], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 2 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=22, seconds=1], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=23, seconds=1], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 6 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=24, seconds=1], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=25, seconds=1], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=26, seconds=1], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=27, seconds=1], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=28, seconds=1], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 6 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=29, seconds=1], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=30, seconds=1], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 3 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=31, seconds=1], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=32, seconds=1], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 2 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=33, seconds=1], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=34, seconds=1], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=35, seconds=1], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=36, seconds=1], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=37, seconds=1], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 3 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=38, seconds=1], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=39, seconds=1], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=40, seconds=1], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 6 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=41, seconds=1], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=42, seconds=1], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=43, seconds=1], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=44, seconds=1], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 4 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 2 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=45, seconds=1], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 8 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=46, seconds=1], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 8 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=47, seconds=1], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=48, seconds=1], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=49, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=50, seconds=2], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=51, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=52, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=53, seconds=2], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=54, seconds=2], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=55, seconds=2], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=56, seconds=2], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 5 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=57, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=58, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=59, seconds=2], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=60, seconds=2], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 8 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=61, seconds=2], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=62, seconds=2], [
+
+        function(A, [ 8 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=63, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 8 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=64, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=65, seconds=2], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=66, seconds=2], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=67, seconds=2], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=68, seconds=2], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 2 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 5 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 4 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=69, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=70, seconds=2], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 8 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 7 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=71, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 2 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=72, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 3 ]),
+
+        function(E, [ 4 ]),
+
+        function(I, [ 7 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=73, seconds=2], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=74, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=75, seconds=2], [
+
+        function(A, [ 7 ]),
+
+        function(B, [ 6 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=76, seconds=2], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 2 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 1 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=77, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 2 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 1 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=78, seconds=2], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 3 ]),
+
+        function(E, [ 8 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 2 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 1 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=79, seconds=2], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 2 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 1 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=80, seconds=2], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 3 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 2 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 1 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=81, seconds=2], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 5 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 2 ]),
+
+        function(O, [ 0 ]),
+
+        function(V, [ 1 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=82, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 5 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=83, seconds=2], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 4 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=84, seconds=2], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=85, seconds=2], [
+
+        function(A, [ 6 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 4 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 3 ]),
+
+        function(O, [ 1 ]),
+
+        function(V, [ 2 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=86, seconds=2], [
+
+        function(A, [ 5 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 6 ]),
+
+        function(I, [ 8 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=87, seconds=2], [
+
+        function(A, [ 8 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 4 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 3 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=88, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 5 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 4 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=89, seconds=2], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 6 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 5 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 4 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=90, seconds=2], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 5 ]),
+
+        function(O, [ 2 ]),
+
+        function(V, [ 4 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=91, seconds=2], [
+
+        function(A, [ 8 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 6 ]),
+
+        function(L, [ 5 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 4 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=92, seconds=2], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=93, seconds=2], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 8 ]),
+
+        function(E, [ 2 ]),
+
+        function(I, [ 0 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=94, seconds=2], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 7 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 4 ]),
+
+        function(I, [ 5 ]),
+
+        function(L, [ 9 ]),
+
+        function(O, [ 6 ]),
+
+        function(V, [ 8 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=95, seconds=3], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 2 ]),
+
+        function(L, [ 5 ]),
+
+        function(O, [ 3 ]),
+
+        function(V, [ 4 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=96, seconds=3], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=97, seconds=3], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 9 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=98, seconds=3], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 7 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=99, seconds=3], [
+
+        function(A, [ 3 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 2 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 6 ]),
+
+        function(O, [ 4 ]),
+
+        function(V, [ 5 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=100, seconds=3], [
+
+        function(A, [ 1 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 0 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=101, seconds=3], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 1 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 4 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=102, seconds=3], [
+
+        function(A, [ 2 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 1 ]),
+
+        function(I, [ 3 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=103, seconds=3], [
+
+        function(A, [ 4 ]),
+
+        function(B, [ 8 ]),
+
+        function(D, [ 9 ]),
+
+        function(E, [ 3 ]),
+
+        function(I, [ 1 ]),
+
+        function(L, [ 7 ]),
+
+        function(O, [ 5 ]),
+
+        function(V, [ 6 ])
+]).
+
+============================== end of model ==========================
+
+============================== STATISTICS ============================
+
+For domain size 10.
+
+Current CPU time: 0.00 seconds (total CPU time: 3.87 seconds).
+Ground clauses: seen=32, kept=32.
+Selections=554482, assignments=5544820, propagations=0, current_models=103.
+Rewrite_terms=29824128, rewrite_bools=27759925, indexes=0.
+Rules_from_neg_clauses=0, cross_offs=716084.
+
+============================== end of statistics =====================
+
+User_CPU=3.87, System_CPU=0.22, Wall_clock=4.
+
+Exiting with 103 models.
+
+Process 30795 exit (all_models) Wed Dec 14 20:21:54 2022
+The process finished Wed Dec 14 20:21:54 2022

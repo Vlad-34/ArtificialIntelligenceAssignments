@@ -1,0 +1,11 @@
+python3 fast-downward.py domain.pddl simplified_task.pddl --search "lazy_greedy([ff()], preferred=[ff()])"
+python3 fast-downward.py domain.pddl task.pddl --search "lazy_greedy([ff()], preferred=[ff()])"
+
+python3 fast-downward.py domain.pddl simplified_task.pddl --search "lazy_greedy([cg()], preferred=[cg()])"
+python3 fast-downward.py domain.pddl task.pddl --search "lazy_greedy([cg()], preferred=[cg()])"
+
+python3 fast-downward.py domain.pddl simplified_task.pddl --search "astar(ff())"
+python3 fast-downward.py domain.pddl task.pddl --search "astar(ff())"
+
+python3 fast-downward.py domain.pddl simplified_task.pddl --search "astar(cg())"
+python3 fast-downward.py domain.pddl task.pddl --search "astar(cg())"

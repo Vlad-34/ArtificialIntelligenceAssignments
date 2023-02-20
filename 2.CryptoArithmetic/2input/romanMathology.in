@@ -1,0 +1,15 @@
+set(arithmetic).
+assign(domain_size, 10).
+assign(max_models, -1).
+
+list(distinct).
+	[S, A, T, U, R, N, V, E, C, L].
+end_of_list.
+
+formulas(assumptions).
+	S != 0.
+	V != 0.
+	C != 0.
+	V != 0.
+	S * 100000 + A * 10000 + T * 1000 + U * 100 + R * 10 + N + V * 10000 + E * 1000 + N * 100 + U * 10 + S + C * 10000 + E * 1000 + R * 100 + E * 10 + S = V * 100000 + U * 10000 + L * 1000 + C * 100 + A * 10 + N.
+end_of_list.

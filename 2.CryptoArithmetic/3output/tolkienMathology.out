@@ -1,0 +1,147 @@
+============================== Mace4 =================================
+Mace4 (64) version 2017-11A (CIIRC), November 2017.
+Process 30735 was started by vlad on ubuntu,
+Wed Dec 14 20:20:57 2022
+The command was "mace4 -f tolkienMathology.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file tolkienMathology.in
+
+set(arithmetic).
+    % set(arithmetic) -> clear(lnh).
+    % set(arithmetic) -> assign(selection_order, 0).
+
+    % Declaring Mace4 arithmetic parse types.
+assign(domain_size,10).
+    % assign(domain_size, 10) -> assign(start_size, 10).
+    % assign(domain_size, 10) -> assign(end_size, 10).
+assign(max_models,-1).
+
+list(distinct).
+[V,A,R,D,I,E,O,M,N,W].
+end_of_list.
+
+formulas(assumptions).
+V != 0.
+V != 0.
+O != 0.
+M != 0.
+V * 10000 + A * 1000 + R * 100 + D * 10 + A + V * 10000 + A * 1000 + I * 100 + R * 10 + E + O * 10000 + R * 1000 + O * 100 + M * 10 + E = M * 10000 + A * 1000 + N * 100 + W * 10 + E.
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+
+============================== end of process non-clausal formulas ===
+
+============================== CLAUSES FOR SEARCH ====================
+
+formulas(mace4_clauses).
+V != 0.
+V != 0.
+O != 0.
+M != 0.
+V * 10000 + A * 1000 + R * 100 + D * 10 + A + V * 10000 + A * 1000 + I * 100 + R * 10 + E + O * 10000 + R * 1000 + O * 100 + M * 10 + E = M * 10000 + A * 1000 + N * 100 + W * 10 + E.
+V != A.
+V != R.
+V != D.
+V != I.
+V != E.
+V != O.
+V != M.
+V != N.
+V != W.
+A != R.
+A != D.
+A != I.
+A != E.
+A != O.
+A != M.
+A != N.
+A != W.
+R != D.
+R != I.
+R != E.
+R != O.
+R != M.
+R != N.
+R != W.
+D != I.
+D != E.
+D != O.
+D != M.
+D != N.
+D != W.
+I != E.
+I != O.
+I != M.
+I != N.
+I != W.
+E != O.
+E != M.
+E != N.
+E != W.
+O != M.
+O != N.
+O != W.
+M != N.
+M != W.
+N != W.
+end_of_list.
+
+============================== end of clauses for search =============
+
+% The largest natural number in the input is 10000.
+
+============================== DOMAIN SIZE 10 ========================
+
+============================== MODEL =================================
+
+interpretation( 10, [number=1, seconds=20], [
+
+        function(A, [ 3 ]),
+
+        function(D, [ 4 ]),
+
+        function(E, [ 7 ]),
+
+        function(I, [ 0 ]),
+
+        function(M, [ 8 ]),
+
+        function(N, [ 2 ]),
+
+        function(O, [ 5 ]),
+
+        function(R, [ 6 ]),
+
+        function(V, [ 1 ]),
+
+        function(W, [ 9 ])
+]).
+
+============================== end of model ==========================
+
+============================== STATISTICS ============================
+
+For domain size 10.
+
+Current CPU time: 0.00 seconds (total CPU time: 24.80 seconds).
+Ground clauses: seen=50, kept=50.
+Selections=1824562, assignments=18245620, propagations=2540160, current_models=1.
+Rewrite_terms=150334599, rewrite_bools=117936109, indexes=0.
+Rules_from_neg_clauses=2540160, cross_offs=6905530.
+
+============================== end of statistics =====================
+
+User_CPU=24.80, System_CPU=0.61, Wall_clock=25.
+
+Exiting with 1 model.
+
+Process 30735 exit (all_models) Wed Dec 14 20:21:22 2022
+The process finished Wed Dec 14 20:21:22 2022
